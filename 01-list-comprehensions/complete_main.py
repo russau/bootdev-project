@@ -1,2 +1,7 @@
-def total_xp(level, xp_to_add):
-    return (level * 100) + xp_to_add
+def power_shelf_potency(potion_potencies):
+    new_potency = [ 
+        potency * 5 for potency in potion_potencies 
+        if potency <= 100
+    ]
+
+    return new_potency
