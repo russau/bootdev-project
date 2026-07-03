@@ -1,16 +1,18 @@
 from main import create_inventory_menu
 
-run_cases = [
-    (["Bread", "Potion"], ["(1) Bread", "(2) Potion"])
-]
+run_cases = [(["Bread", "Potion"], ["(1) Bread", "(2) Potion"])]
 
 submit_cases = run_cases + [
     ([], []),
     (["Sword"], ["(1) Sword"]),
-    (["Iron Sword", "Health Potion", "Magic Shield"], ["(1) Iron Sword", "(2) Health Potion", "(3) Magic Shield"]),
+    (
+        ["Iron Sword", "Health Potion", "Magic Shield"],
+        ["(1) Iron Sword", "(2) Health Potion", "(3) Magic Shield"],
+    ),
     (["1", "2", "3"], ["(1) 1", "(2) 2", "(3) 3"]),
     (["apple", "BANANA", "Cherry"], ["(1) apple", "(2) BANANA", "(3) Cherry"]),
 ]
+
 
 def test(input1, expected_output):
     print("---------------------------------")
