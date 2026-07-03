@@ -1,6 +1,6 @@
 # Enumerate
 
-It's very common for a programmer to create an incrementing count when looping over a list.
+It is very common for a programmer to create an incrementing count when looping over a list.
 
 ```py
 items = ["Bread", "Potion"]
@@ -10,7 +10,7 @@ for item in items:
     i += 1
 ```
 
-Normally, when you loop through a list, Python only gives you the items. But if you wrap your list in `enumerate()`, Python gives you two things at every step: a count and the item itself.
+Normally, when you loop through a list, Python only gives you the items. If you wrap your list in `enumerate()`, Python provides you two things at every step: the count and the item itself.
 
 ```py
 for i, item in enumerate(items):
@@ -20,7 +20,7 @@ for i, item in enumerate(items):
 # 1: Potion
 ```
 
-Let's see an example of `enumerate()` used with a list comprehension.
+Let's see an example of `enumerate()` used within a list comprehension.
 
 ```py
 count_items = [f"{i}: {item}" for i, item in enumerate(items)]
@@ -29,9 +29,9 @@ print(count_items)
 # ['0: Bread', '1: Potion']
 ```
 
-## Where to start counting? 
+## Where to Start Counting?
 
-By default, `enumerate()` starts counting at `0`.  We can optionally pass `start=1` to tell `enumerate()` where to begin:
+By default, `enumerate()` starts counting at `0`.  We can optionally pass a start argument to tell `enumerate()` where to begin:
 
 ```py
 for i, item in enumerate(items, start=1):
